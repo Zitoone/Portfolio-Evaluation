@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Permanent+Marker&display=swap');
+/* Global */
+:root{
+    --violet: #80586D;
+    --marron: #9E8277;
+    --mainfont: "Ancizar Sans", sans-serif;
+    --titlefont: "Permanent Marker", cursive;
+
+}
+*{
+    margin: 0;
+    font-family: var(--mainfont);
+}
+a,li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1,h2{
+        color: var(--violet);
+        /* margin: 10px; */
+        font-family: var(--titlefont);
+    }
+/* Mobile style */
+/* Index page */
+/* Header */
+header{
+    padding: 10px;
+    .navbar{
+        display: none;
+    }
+}
+/* main */
+/* Section 1 Introduction */
+.introduction{
+    background-image: url("https://img.pikbest.com/wp/202348/mockup-device-isolated-mountain-in-3d-rendering-with-responsive-web-design-for-all-devices_9775198.jpg!w700wp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    #opacity{
+        background-color: rgba(0, 0, 0, 0.408);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #intro{
+        margin: 0 20px;
+        h2{
+            display: none;
+        }
+        p:nth-child(2){
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        p:nth-child(3){
+            padding: 15px 0;
+        }
+        button{
+            width: fit-content;
+            display: block;
+            padding: 8px 12px;
+            background-color: var(--marron);
+            border: none;
+            border-radius: 5px;
+            &:hover{
+                background-color: var(--violet);
+                transform: scale(1.1);
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+
+    #introduction-picture{
+        width: 200px;
+        margin: auto;
+        img{
+            border: 4px solid white;
+            border-radius: 100%;
+        }
+    }
+}
+/* Section 2 A propos */
+.a-propos{
+    padding: 50px 20px;
+    h3{
+        text-align: center;
+        font-size: 30px;
+        font-family: var(--titlefont);
+        color: var(--violet);
+        padding-bottom: 50px;
+    }
+    h4{
+        font-size: 24px;
+        font-family: var(--titlefont);
+        color: var(--violet);
+
+    }
+    .parcours-competences{
+        display: flex;
+        flex-direction: column;
+    }
+    .parcours{
+        p{
+            padding: 10px 0;
+        }
+        a{
+            color: var(--marron);
+            &:hover{
+                color: var(--violet);
+            }
+        }
+    }
+    .competences h4{
+        padding: 50px 0;
+    }
+    .articles-competences{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        margin: auto;
+        article{
+            justify-items: center;
+            color: var(--violet);
+            font-size: 30px;
+        }
+    }
+}
+
+
+
+/* Footer */
+footer{
+    background-color: var(--violet);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        color:white
+    }
+    #social{
+        justify-self: center;
+        padding: 20px;
+        display: flex;
+        /* justify-content: space-evenly; */
+        gap: 20px;
+        i{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Responsive Tablet */
+/* Header */
+@media screen and (min-width:768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 10px; */
+        .navbar{
+        display: flex;
+        }   
+        ul{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    /* Main tablet */
+    /* Section 1 Introduction tablet */
+    .introduction {
+        #opacity {
+            flex-direction: row;
+            gap: 0;
+            #intro{
+                padding-top: 60px;
+            }
+        }
+    #introduction-picture{
+        padding: 100px;
+        }  
+    }
+    /* Section 2 A propos Tablet */
+    .parcours{
+        flex: 1 0 50%;
+    }    
+    .parcours-competences {
+        flex-direction: row!important;
+        gap: 50px;
+    }
+    .articles-competences{
+        grid-template-columns: 1fr 1fr 1fr!important;
+    }
+
+    /* Footer tablet */
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        #social {
+            justify-self: right;
+        }
+    }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width:1025px){
+    .desktop {
+        max-width: 1440px;
+        margin: auto;
+    }
+}
+
+
+
+
+/* A revoir : Barre de scroll en responsive tablet section 2 */
