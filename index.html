@@ -30,7 +30,7 @@
                     <p>Créatrice de sites Internet</p>
                     <p>Je crée des expériences web élégantes, intuitives et
                         performantes avec une attention particulière aux détails.</p>
-                    <button><a href="projects.html">Voir mes projets</a></button>
+                    <button class="btn"><a href="projects.html">Voir mes projets</a></button>
                 </div>
 
                 <div id="introduction-picture">
@@ -85,29 +85,89 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projets desktop">
+            <h3>Mes projets récents</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex ea, voluptas sed quas pariatur aut mollitia laboriosam, placeat commodi distinctio fugit dolorem consectetur, quidem debitis error modi! Cupiditate, veritatis!</p>
 
+            <div class="articles-projets">
+                <article>
+                    <img src="img/projets/Brigitte.jpg" alt="Site Brigitte">
+                    <div>
+                        <h4>Brigitte Galerie d'Art</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nemo ullam, magni recusandae laboriosam officia eveniet excepturi fugit sint! Cupiditate eum harum molestiae voluptatem quibusdam quaerat veritatis nihil corporis asperiores!</p>
+                        <div>
+                            <ul class="liste-compet">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <a href="#">Voir le projet →</a>
+                    </div>             
+                </article>
 
+                <article>
+                    <img src="img/projets/fonciere-pagerie-malmaison.jpg" alt="Site Foncière">
+                    <div>
+                        <h4>Site Foncière</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nemo ullam, magni recusandae laboriosam officia eveniet excepturi fugit sint! Cupiditate eum harum molestiae voluptatem quibusdam quaerat veritatis nihil corporis asperiores!</p>
+                        <div>
+                            <ul class="liste-compet">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <a href="#">Voir le projet →</a>
+                    </div>             
+                </article>
+            </div>
+            <button class="btn"><a href="projects.html">Voir tous mes projets</a></button>
+        </section>
+
+        <section class="contact desktop">
+            <h3>Contactez-moi</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut, explicabo fugiat fugit eaque ipsam voluptas. Facilis aliquid ad nobis ea? Minus amet, atque voluptas fuga officiis tempora impedit earum.</p>
+
+            <form action="#">
+                <div>
+                <div>
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+            </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea rows="10" name="message" id=""></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="rgpd" id="rgpd">
+                    <label for="rgpd">J'accepte que mes informations soient traitées conformément à la politique de confidentialité. </label>
+                </div>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
         </section>
 
     </main>
 
-    <footer>
-        <div class="desktop">
+    <footer class="desktop">
         <div>
-            <a href="/"><h2>Olivia Nanquette</h2></a>
-            <p>Créatrice de sites Internet</p>
-        </div>
-
-        <div>
-            <div id="social">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-dribbble"></i>
+            <div>
+                <a href="/"><h2>Olivia Nanquette</h2></a>
+                <p>Créatrice de sites Internet</p>
             </div>
-            <p>© 2025 Olivia Nanquette. Tous droits réservés.</p>
+
+            <div>
+                <div id="social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-dribbble"></i>
+                </div>
+                <p>© 2025 Olivia Nanquette. Tous droits réservés.</p>
+            </div>
         </div>
-    </div>
     </footer>
 </body>
 </html>
