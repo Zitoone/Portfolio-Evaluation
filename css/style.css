@@ -22,7 +22,6 @@ img{
 }
 h1,h2{
         color: var(--violet);
-        /* margin: 10px; */
         font-family: var(--titlefont);
     }
 h3{
@@ -39,12 +38,10 @@ h3{
     background-color: var(--marron);
     border: none;
     border-radius: 5px;
+    color: white;
     &:hover{
         background-color: var(--violet);
         transform: scale(1.1);
-    }
-    a{
-        color: white;
     }
 }
 /* Mobile style */
@@ -69,7 +66,6 @@ header{
         flex-direction: column;
         gap: 30px;
     }
-
     #intro{
         margin: 0 20px;
         h2{
@@ -82,10 +78,7 @@ header{
         p:nth-child(3){
             padding: 15px 0;
         }
- 
     }
-
-
     #introduction-picture{
         width: 200px;
         margin: auto;
@@ -103,8 +96,6 @@ header{
 /* Section 2 A propos */
 .a-propos{
     padding: 50px 20px;
-
-
     .parcours-competences{
         display: flex;
         flex-direction: column;
@@ -123,7 +114,9 @@ header{
     .competences h4{
         padding: 50px 0;
     }
-    .articles-competences{
+}
+.a-propos .articles-competences,
+#page-about > section:nth-child(4) > div.articles-competences{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 35px;
@@ -134,7 +127,6 @@ header{
             font-size: 30px;
         }
     }
-}
 /* Section 3 Projets */
 .projets > p{
     text-align: center;
@@ -142,7 +134,7 @@ header{
 }
 .projets{
     padding: 50px 20px;
-    button{
+    a{
         justify-self: center;
         margin-top: 50px;
     }
@@ -176,9 +168,9 @@ header{
             }
         }
     }
-
 /* Section 4 Contact */
-.contact{
+.contact,
+#page-contact{
     padding: 50px 20px;
     P{
         text-align: center;
@@ -196,9 +188,8 @@ header{
                 padding: 10px;
             }
         }
-        div:nth-child(4){
+        div:nth-child(3){
             flex-direction: row;
-            align-items: flex-start;
             gap: 15px;
         }
     }
@@ -221,11 +212,11 @@ footer{
         justify-self: center;
         padding: 20px;
         display: flex;
-        /* justify-content: space-evenly; */
         gap: 20px;
         i{
             font-size: 20px;
             cursor: pointer;
+            color: white;
         }
     }
 }
@@ -238,7 +229,6 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        /* margin: 10px; */
         .navbar{
         display: flex;
         }   
@@ -250,13 +240,24 @@ footer{
     /* Main tablet */
     /* Section 1 Introduction tablet */
     .introduction {
+        height: 400px;
         #opacity {
             flex-direction: row;
             gap: 0;
+            height: 100%;
             #intro{
                 padding-top: 60px;
             }
-        }
+            p:nth-child(3){
+                width: 60%;
+            }
+        }}
+    #intro{
+            h2{
+                display: block!important;
+                font-size: 60px;
+                color: white;
+            }
     #introduction-picture{
         padding: 100px;
         }  
@@ -277,9 +278,10 @@ footer{
     .articles-projets {
         flex-direction: row;
     }
-    /* Section 4  */
-    body > main > section.contact > form > div:nth-child(1){
-    display: grid;
+    /* Section 4 Contact */
+    body > main > section.contact.desktop > form > div:nth-child(1),
+    #page-contact > form > div:nth-child(1){
+    display: grid!important;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     }
@@ -288,17 +290,16 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* #social {
-            justify-self: right;
-        } */
     }
 }
-
 /* Responsive Desktop */
 @media screen and (min-width:1025px){
     .desktop {
         max-width: 1440px;
         margin: auto;
+    }
+    .introduction{
+        height: 530px;
     }
     footer>div{ 
         display: flex;
@@ -308,11 +309,9 @@ footer{
     }           
 }
 
-
 /* A revoir : Barre de scroll en responsive tablet section 2 */
 
 /* Autre pages */
-
 .titre{
     background-color: var(--marron);
     padding: 50px;
@@ -326,4 +325,45 @@ footer{
         margin-top: 50px;
     }
     p{text-align: center;}
+}
+/* Page A propos */
+#page-about{
+    section{
+        padding: 50px 20px;
+        h2{
+            padding-bottom: 20px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        img{
+            border: 1px solid var(--marron);
+            border-radius: 150px;}
+    }
+}
+.presentation{
+    div{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;  
+    }
+}
+@media screen and (min-width:768px){
+    #page-about{
+        img{
+            width: 40%;
+            align-self: center;
+        }
+    }
+}
+@media screen and (min-width:1025px){
+    #page-about{
+        .presentation div{
+            flex-direction: row;
+            align-items: flex-end;
+            img{
+                width: 30%;
+            }
+        }
+    }
 }

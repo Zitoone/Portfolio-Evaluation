@@ -30,7 +30,7 @@
                     <p>Créatrice de sites Internet</p>
                     <p>Je crée des expériences web élégantes, intuitives et
                         performantes avec une attention particulière aux détails.</p>
-                    <button class="btn"><a href="projects.html">Voir mes projets</a></button>
+                    <a class="btn" href="projects.html">Voir mes projets</a>
                 </div>
 
                 <div id="introduction-picture">
@@ -47,7 +47,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam, nam modi doloribus consequatur commodi sed aliquam ullam aut, quia asperiores ducimus. Dolorum doloremque tenetur, hic sapiente amet fugit cum!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam, nam modi doloribus consequatur commodi sed aliquam ullam aut, quia asperiores ducimus. Dolorum doloremque tenetur, hic sapiente amet fugit cum!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam, nam modi doloribus consequatur commodi sed aliquam ullam aut, quia asperiores ducimus. Dolorum doloremque tenetur, hic sapiente amet fugit cum!</p>
-                    <a href="/">En savoir plus sur mon parcours →</a>
+                    <a href="about.html">En savoir plus sur mon parcours →</a>
                 </div>
 
                 <div class="competences">
@@ -87,7 +87,8 @@
 
         <section class="projets desktop">
             <h3>Mes projets récents</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex ea, voluptas sed quas pariatur aut mollitia laboriosam, placeat commodi distinctio fugit dolorem consectetur, quidem debitis error modi! Cupiditate, veritatis!</p>
+            <p>Découvrez une sélection de mes travaux récents qui démontrent mes
+                compétences en développement web et design d'interface.</p>
 
             <div class="articles-projets">
                 <article>
@@ -120,27 +121,28 @@
                     </div>             
                 </article>
             </div>
-            <button class="btn"><a href="projects.html">Voir tous mes projets</a></button>
+            <a class="btn" href="projects.html">Voir tous mes projets</a>
         </section>
 
         <section class="contact desktop">
             <h3>Contactez-moi</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut, explicabo fugiat fugit eaque ipsam voluptas. Facilis aliquid ad nobis ea? Minus amet, atque voluptas fuga officiis tempora impedit earum.</p>
+            <p>Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter, je
+                vous répondrai dans les plus brefs délais.</p>
 
             <form action="#">
                 <div>
-                <div>
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" id="">
+                    <div>
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="">
-                </div>
-            </div>
                 <div>
                     <label for="message">Message</label>
-                    <textarea rows="10" name="message" id=""></textarea>
+                    <textarea rows="10" name="message" id="message"></textarea>
                 </div>
                 <div>
                     <input type="checkbox" name="rgpd" id="rgpd">
@@ -151,23 +153,22 @@
         </section>
 
     </main>
-
-    <footer class="desktop">
+    <footer>
         <div>
-            <div>
-                <a href="/"><h2>Olivia Nanquette</h2></a>
-                <p>Créatrice de sites Internet</p>
-            </div>
+            <a href="/"><h2>Olivia Nanquette</h2></a>
+            <p>Créatrice de sites Internet</p>
+        </div>
 
-            <div>
-                <div id="social">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-dribbble"></i>
-                </div>
-                <p>© 2025 Olivia Nanquette. Tous droits réservés.</p>
+        <div>
+            <div id="social">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://github.com/Zitoone/"><i class="fa-brands fa-github"></a></i>
+
+                <i class="fa-brands fa-dribbble"></i>
             </div>
+            <p>© 2025 Olivia Nanquette. Tous droits réservés.</p>
         </div>
     </footer>
+
 </body>
 </html>
